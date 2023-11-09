@@ -1,0 +1,2 @@
+image_url=$(curl -s "https://www.amiiboapi.com/api/amiibo/?id=0101000003560902" | grep -oP '(?<="image":")[^"]+');
+wget -O zelda.png "$image_url";

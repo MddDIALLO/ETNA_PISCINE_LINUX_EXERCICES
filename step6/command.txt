@@ -1,0 +1,1 @@
+head -n 1 mirror > mirror_first_line.txt && tail -1 mirror > mirror_last_line.txt && diff -i mirror_first_line.txt mirror_last_line.txt
